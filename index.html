@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Seccion de inicio-->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>|Portafolio|</h1>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                </li>
+                <li>
+                  <a href="#habilidades" onclick="seleccionar(this)"
+                    >HABILIDADES</a
+                  >
+                </li>
+                <li>
+                  <a href="#proyectoss" onclick="seleccionar(this)"
+                    >PROYECTOS</a
+                  >
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!--Iconos del menu responsive-->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!--Iconos de redes sociales-->
+            <div class="redes">
+              <a href="https://github.com/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.facebook.com/profile.php?id=100006867436171"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/ri0s.dann/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2>Soy <span>Daniel Rios</span>, Full Stack Developer</h2>
+          <p class="descripcion">
+            En este espacio, encontrarás una muestra de mi trabajo, desde
+            proyectos de desarrollo web hasta diseños de interfaces. Cada línea
+            de código y cada píxel están cuidadosamente pensados para brindar
+            valor y satisfacer las necesidades de los usuarios.
+          </p>
+          <a href="#proyectoss">Ir a Proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Seccion sobre mi-->
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/PicsArt_10-03-12.32.13.jpg" alt="" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola soy <span>Daniel Rios</span></h2>
+        <h3>Fullstack Developer</h3>
+        <p>
+          Soy un estudiante de la carrera de ISC y estoy cursando el 5°
+          semestre, estoy especializandome en la Programacion, Bases de Datos,
+          Redes y Soporte Tecnico.
+        </p>
+        <p>
+          ¡Gracias por visitar mi portafolio! Espero que disfrutes explorando
+          tanto como yo disfruté creándolo. ¡Hablemos! 🚀
+        </p>
+        <a href="#">Descargar CV</a>
+      </div>
+    </section>
+
+    <!-- Seccion habilidades -->
+    <section id="habilidades">
+      <h3 class="titulo-seccion">Mis habilidades</h3>
+      <div class="fila">
+        <div class="habilidad">
+          <span class="icono"
+            ><i class="fa-solid fa-square-root-variable"></i
+          ></span>
+          <h4>Destreza Matemática</h4>
+          <hr />
+          <ul class="habilidades-tag">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <p>
+            Base sólida en matemáticas para abordar problemas técnicos y
+            analizar algoritmos de manera eficientemente.
+          </p>
+        </div>
+        <div class="habilidad">
+          <span class="icono"><i class="fa-solid fa-flask"></i></span>
+          <h4>Investigación y desarrollo</h4>
+          <hr />
+          <ul class="habilidades-tag">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <p>
+            Participación en proyectos de investigación para mejorar y
+            desarrollar nuevas tecnologías y metodologías en el campo de la
+            informática y los sistemas computacionales.
+          </p>
+        </div>
+        <div class="habilidad">
+          <span class="icono"><i class="fa-solid fa-diagram-project"></i></span>
+          <h4>Comprensión de diagramas y dibujos técnicos</h4>
+          <hr />
+          <ul class="habilidades-tag">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <p>
+            Interpretar diagramas, planos y especificaciones técnicas para la
+            creación fundamental del diseño y desarrollo de sistemas.
+          </p>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="habilidad">
+          <span class="icono"><i class="fa-solid fa-code"></i></span>
+          <h4>Desarrollo de software</h4>
+          <hr />
+          <ul class="habilidades-tag">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <p>
+            Creación de aplicaciones, sistemas y programas informáticos para
+            satisfacer las necesidades de clientes o empresas.
+          </p>
+        </div>
+        <div class="habilidad">
+          <span class="icono"><i class="fa-solid fa-network-wired"></i></span>
+          <h4>Administración de redes</h4>
+          <hr />
+          <ul class="habilidades-tag">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <p>
+            Configuración, mantenimiento y seguridad de redes informáticas,
+            incluyendo la gestión de servidores y la resolución de problemas de
+            conectividad.
+          </p>
+        </div>
+        <div class="habilidad">
+          <span class="icono"><i class="fa-solid fa-code"></i></span>
+          <h4>Desarrollo Web</h4>
+          <hr />
+          <ul class="habilidades-tag">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <p>
+            Creación de sitios web, aplicaciones web y plataformas en línea
+            utilizando diferentes tecnologías y lenguajes de programación.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion Skills -->
+    <div class="contenedor-skills" id="skills">
+      <h3>HABILIDADES</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Html y Css</p>
+          <span class="porcentaje">70%</span>
+        </div>
+        <div class="barra">
+          <div id="html" class=""></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Javascript</p>
+          <span class="porcentaje">40%</span>
+        </div>
+        <div class="barra">
+          <div id="js" class=""></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Base de datos</p>
+          <span class="porcentaje">75%</span>
+        </div>
+        <div class="barra">
+          <div id="bd" class=""></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Java</p>
+          <span class="porcentaje">75%</span>
+        </div>
+        <div class="barra">
+          <div id="jv" class=""></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seccion Proyectos -->
+    <section id="proyectoss">
+      <h3 class="titulo-seccion">Mis Proyectos</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyectos.jpg" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Programa Calculadora</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyectos.jpg" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Programa Calculadora</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyectos.jpg" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Programa Calculadora</p>
+          </div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyectos.jpg" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Programa Calculadora</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyectos.jpg" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Programa Calculadora</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyectos.jpg" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Programa Calculadora</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion contacto -->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contactame ahora</h3>
+      <div class="contenedor-form">
+        <form action="">
+          <div class="fila mitad">
+            <input
+              type="text"
+              placeholder="Nombre completo"
+              class="input-mitad"
+            />
+            <input
+              type="text"
+              placeholder="Dirección de correo"
+              class="input-mitad"
+            />
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Tema..." class="input-full" />
+          </div>
+          <div class="fila">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Tu mensaje..."
+              class="input-full"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Seccion footer -->
+    <footer>
+      <p>Todos los derechos reservados - 2024</p>
+      <div class="redes">
+        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100006867436171"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/ri0s.dann/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
